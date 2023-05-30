@@ -1,0 +1,28 @@
+
+.card img {
+max-width: 80%;
+height: auto;
+margin: 10%;
+} 
+
+.card1 {
+  margin-top: 2rem;
+  margin-left: 20%;
+  margin-right: 20%;
+  border-radius: 15px;
+  padding: 1rem;
+}
+
+.card {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  border-radius: 15px;
+}
+
+.row {
+  margin-left: 12%;
+  justify-content: center;
+  align-items: center;
+}
+

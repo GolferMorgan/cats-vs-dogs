@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Cats VS Dogs</title>
+</head>
+<body class="white">
+  <nav>
+    <div class="nav-wrapper red lighten-2">
+      <a href="#" class="brand-logo center">Which is Cuter? Cats Vs Dogs!!!</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="#dogBox">View Dogs</a></li>
+        <li><a href="#catBox">View Cats</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- voting modal -->
+  <!-- centered up content in modal -->
+  <div id="modal1" class="modal align items center">
+    <div class="modal-content">
+      <h4>Make your choice!</h4>
+      <form action="#">
+        <p>
+          <label>
+            <input name="counter" type="radio" value="dogs"  />
+            <span>Dogs</span>
+          </label>
+          </p>
+          <p>
+              <label>
+                <input name="counter" type="radio" value="cats"  />
+                <span>Cats</span>
+              </label>
+          </p>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Vote</a>
+    </div>
+  </div> 
+  <p class="center-align">
+  <a class="waves-effect waves-light btn-large modal-trigger" href="#modal1" id="modalBtn">Vote Here</a>
+</p>
+<div class="card1 col s12 m5 red lighten-2 z-depth-4">
+  <div class="card-content center-align">
+    <!-- added an explanation container giving directions -->
+  <h5 class="center" id="container">Are you feeling stressed or anxious about things in your every day life? 
+                                    Do you feel overwhelmed and need a break from reality?
+                                    Well here is your chance to decompress and view pictures of adorable cats and dogs by clicking the pulsing search buttons!!! 
+                                    And guess what you can click the button above and vote for which you find cuter!!!!</h5>
+</div>                          
+</div>   
+<!-- cards containing our pictures and pulsing buttons -->
+    <div class="row">
+      <div class="card col s12 m5 teal lighten-2 z-depth-4">
+          <div class="card-content center-align">
+              <h2>Look at Adorable Dogs</h2>
+              <div id="dogBox"></div>
+              <button class="btn-floating btn-large pulse red lighten-1" id="dog-btn">
+                <i class="large material-icons">search</i>
+              </button>
+            </div>
+          </div>
+          <div class="card col s12 m5 teal lighten-2 z-depth-4">
+              <div class="card-content center-align">
+                  <h2>Check out Some Crazy Cats</h2>
+                  <div id="catBox"></div>
+                  <button class="btn-floating btn-large pulse red lighten-1" id="cat-btn">
+                    <i class="large material-icons">search</i>
+                  </button>
+                </div>
+              </div>
+            </div>
+           
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./assets/js/cat.js"></script>
+    <script src="./assets/js/dog.js"></script>
+</body>
+
+</html>
